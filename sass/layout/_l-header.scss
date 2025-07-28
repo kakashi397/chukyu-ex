@@ -1,11 +1,11 @@
 @use '../foundation/functions';
 @use '../foundation/mixins';
-@use '../foundation/variables'; 
+@use '../foundation/variables';
 
 /* header */
 
 .l-header {
   &__wrapper {
-
+    display: flex;
   }
 }

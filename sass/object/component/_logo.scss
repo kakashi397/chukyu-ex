@@ -1,0 +1,12 @@
+@use '../../foundation/functions' as *;
+
+/* logo */
+.c-logo {
+  &--header {
+    width: rem(98);
+  }
+  &--footer {
+    width: rem(227);
+    margin-inline: auto;
+  }
+}
