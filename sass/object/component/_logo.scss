@@ -4,9 +4,7 @@
 .c-logo {
   &--header {
     width: rem(98);
-  }
-  &--footer {
-    width: rem(227);
-    margin-inline: auto;
+    margin-top: rem(10);
+    // position: absolute;
   }
 }
