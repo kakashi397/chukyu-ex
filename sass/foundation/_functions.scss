@@ -1,0 +1,34 @@
+@use 'sass:math';
+
+// px→rem(16pxをベースとした場合)
+@function rem($pixels, $context: 16) { 
+  @return math.div($pixels, $context) * 1rem;
+}
+
+// clamp()ジェネレータ
+@function clamp-rem($min-vw, $min-size, $max-vw, $max-size, $base-font-size: 16) {
+  $slope: ($max-size - $min-size) / ($max-vw - $min-vw) * 100;
+  $intercept: $min-size - ($slope * $min-vw / 100);
+
+  $min-rem: $min-size / $base-font-size * 1rem;
+  $max-rem: $max-size / $base-font-size * 1rem;
+  $intercept-rem: $intercept / $base-font-size * 1rem;
+
+  @return clamp(#{$min-rem}, #{$intercept-rem} + #{$slope}vw, #{$max-rem});
+}
+
+// %変換ジェネレータ
+@function to-percent($value, $base) {
+  @if math.unitless($value) {
+    $value: $value * 1px;
+  }
+  @if math.unitless($base) {
+    $base: $base * 1px;
+  }
+  @return math.div($value, $base) * 100%;
+}
+
+// スケール関数
+@function scale($base, $value, $target) {
+  @return ($value / $base) * $target;
+}
