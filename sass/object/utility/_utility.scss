@@ -4,10 +4,19 @@
 
 /* ユーティリティ */
 .u-only-sp {
-  @include media(m) {
+  @include media(l) {
     display: none;
   }
 }
+
+.u-only-pc {
+  display: none;
+
+  @include media(l) {
+    display: flex;
+  }
+}
+
 // .u-only-xs {
 //   @include media(s) {
 //     display: none;
