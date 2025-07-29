@@ -1,1 +1,6 @@
-@use "setting";
+@use 'setting';
+@use './layout/l-header';
+@use './object/component/hamburger-btn';
+@use './object/component/logo';
+@use './object/component/nav-sp';
+@use './object/utility/utility';

@@ -1,0 +1,41 @@
+@use '../../foundation/mixins' as *;
+@use '../../foundation/variables' as *;
+@use '../../foundation/functions' as *;
+
+/* ユーティリティ */
+.u-only-sp {
+  @include media(m) {
+    display: none;
+  }
+}
+// .u-only-xs {
+//   @include media(s) {
+//     display: none;
+//   }
+// }
+// .u-only-pc {
+//   display: none;
+//   @include media(m) {
+//     display: block;
+//   }
+// }
+// .u-hidden-pc {
+//   @include media(l) {
+//     display: none;
+//   }
+// }
+// .u-pc-fz24 {
+//   display: inline;
+//   @include media(m) {
+//     font-size: rem(24);
+//   }
+// }
+// .u-uppercase {
+//   text-transform: uppercase;
+// }
+// .u-color-main {
+//   color: $main;
+// }
+// .u-fz-24-32 {
+//   font-size: clamp-rem(375, 24, 1536, 32);
+// }
