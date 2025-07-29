@@ -1,8 +1,11 @@
 @use '../foundation/variables' as *;
+@use '../foundation/functions' as *;
+
 
 /* base */
 body {
   font-family: $global-fonts;
+  font-size: rem(16);
 }
 
 li {
@@ -12,7 +15,7 @@ li {
 img {
   max-width: 100%;
   height: auto;
-  display: block;
+  vertical-align: bottom;
 }
 
 a {

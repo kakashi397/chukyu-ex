@@ -1,0 +1,55 @@
+@use '../../foundation/variables' as *;
+@use '../../foundation/mixins' as *;
+@use '../../foundation/keyframes' as *;
+@use '../../foundation/functions' as *;
+
+/* nav-sp */
+.c-nav-sp {
+  width: 100vw;
+  height: 100dvh;
+  position: fixed;
+  text-align: center;
+  translate: 100vw;
+  transition: all 0.6s;
+
+  &__list {
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    gap: rem(24.7);
+    padding-top: rem(36);
+  }
+
+  &__item:last-child {
+    margin-left: rem(-27);
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: rem(8);
+  }
+
+  &__icon {
+    width: rem(20);
+    height: rem(15.7);
+  }
+
+  &__copy {
+    margin-top: rem(19);
+    font-size: rem(12);
+  }
+
+  @include media(l) {
+    display: none; // PCでは非表示
+  }
+
+  &.is-open {
+    translate: 0;
+
+    @include media(m) {
+      translate: 60vw;
+    }
+  }
+}
