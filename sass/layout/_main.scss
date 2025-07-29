@@ -1,0 +1,12 @@
+@use '../foundation/variables' as *;
+@use '../foundation/functions' as *;
+@use '../foundation/mixins' as *;
+
+/* main */
+.l-main-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  @include media(l) {
+    grid-template-columns: to-percent(280, 1440) 1fr;
+  }
+}

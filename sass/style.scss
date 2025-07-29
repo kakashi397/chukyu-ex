@@ -1,5 +1,8 @@
 @use 'setting';
-@use './layout/l-header';
+@use './layout/header';
+@use './layout/main';
+@use './layout/maincol';
+@use './layout/sidebar';
 @use './object/component/hamburger-btn';
 @use './object/component/logo';
 @use './object/component/nav-sp';
