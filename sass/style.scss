@@ -1,12 +1,21 @@
 @use 'setting';
+
+// lauout
 @use './layout/header';
 @use './layout/main';
 @use './layout/maincol';
 @use './layout/sidebar';
+
+// component
 @use './object/component/hamburger-btn';
 @use './object/component/logo';
 @use './object/component/nav-sp';
 @use './object/component/global-nav';
 @use './object/component/contact-icon';
+
+// project
 @use './object/project/hero';
+@use './object/project/slider';
+
+// utility
 @use './object/utility/utility';

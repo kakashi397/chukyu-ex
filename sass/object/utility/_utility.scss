@@ -2,7 +2,7 @@
 @use '../../foundation/variables' as *;
 @use '../../foundation/functions' as *;
 
-/* ユーティリティ */
+/* utility */
 .u-only-sp {
   @include media(l) {
     display: none;
