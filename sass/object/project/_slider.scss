@@ -1,0 +1,54 @@
+@use '../../foundation/functions' as *;
+@use '../../foundation/keyframes' as *;
+@use '../../foundation/mixins' as *;
+@use '../../foundation/variables' as *;
+
+/* slider */
+.p-slider {
+  margin-top: rem(73);
+
+  &__img-carousel {
+    padding-top: rem(16);
+    padding-bottom: rem(58);
+    background-color: $light-gray;
+    overflow-x: hidden;
+    width: 100vw;
+
+    @include media(l) {
+      padding: rem(63) 0;
+    }
+  }
+
+  &__img-track {
+    display: flex;
+    width: max-content;
+    animation: scroll-left 20s linear infinite;
+
+    @include media(l) {
+      animation: scroll-left 50s linear infinite;
+    }
+
+  }
+
+  &__img-item {
+    margin-right: rem(16);
+
+    @include media(l) {
+      margin-right: rem(48);
+    }
+  }
+
+  &__img {
+    width: rem(200);
+    height: rem(200);
+
+    @include media(l) {
+      width: rem(360);
+      height: rem(360);
+    }
+
+    &:last-child {
+      object-fit: cover;
+    }
+  }
+}
