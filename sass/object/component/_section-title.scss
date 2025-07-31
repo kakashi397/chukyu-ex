@@ -9,4 +9,8 @@
   font-weight: 700;
   color: transparent;
   -webkit-text-stroke: 1px $main-color;
+
+  @include media(l) {
+    font-size: rem(128);
+  }
 }
