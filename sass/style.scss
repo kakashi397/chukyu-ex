@@ -12,11 +12,15 @@
 @use './object/component/nav-sp';
 @use './object/component/global-nav';
 @use './object/component/contact-icon';
+@use './object/component/section-title-sub';
+@use './object/component/section-title';
+
 
 // project
 @use './object/project/hero';
 @use './object/project/slider';
 @use './object/project/catchcopy';
+@use './object/project/about';
 
 // utility
 @use './object/utility/utility';

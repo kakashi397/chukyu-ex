@@ -1,0 +1,14 @@
+@use '../../foundation/variables' as *;
+@use '../../foundation/mixins' as *;
+@use '../../foundation/functions' as *;
+
+/* about */
+.p-about {
+  margin-top: rem(126);
+
+  &__wrapper {
+    padding: 0 rem(20);
+  }
+
+  
+}

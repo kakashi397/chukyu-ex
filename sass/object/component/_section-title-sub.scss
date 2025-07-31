@@ -1,0 +1,9 @@
+@use '../../foundation/variables' as *;
+@use '../../foundation/mixins' as *;
+@use '../../foundation/functions' as *;
+
+/* section-title-sub */
+.c-section-title-sub {
+  font-size: rem(20);
+  font-weight: 700;
+}

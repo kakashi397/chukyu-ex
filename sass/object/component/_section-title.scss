@@ -1,0 +1,16 @@
+@use '../../foundation/variables' as *;
+@use '../../foundation/mixins' as *;
+@use '../../foundation/functions' as *;
+
+/* section-title */
+.c-section-title {
+  font-size: rem(72);
+  font-weight: 700;
+  color: transparent;
+  // -webkit-text-stroke: 1px $main-color;
+  text-shadow:
+    -1px -1px 0 $main-color, /* 左上 */
+     1px -1px 0 $main-color, /* 右上 */
+    -1px  1px 0 $main-color, /* 左下 */
+     1px  1px 0 $main-color; /* 右下 */
+}
