@@ -6,9 +6,19 @@
 .p-about {
   margin-top: rem(126);
 
-  &__wrapper {
+  &__inner {
     padding: 0 rem(20);
   }
 
-  
+  &__title {
+    margin-top: rem(15);
+    margin-bottom: rem(40);
+  }
+
+  &__description {
+    font-size: rem(14);
+    font-weight: 400;
+    line-height: 1.8;
+    margin-bottom: rem(32);
+  }
 }
