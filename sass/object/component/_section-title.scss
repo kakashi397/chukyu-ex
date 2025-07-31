@@ -1,0 +1,16 @@
+@use '../../foundation/variables' as *;
+@use '../../foundation/mixins' as *;
+@use '../../foundation/functions' as *;
+
+/* section-title */
+.c-section-title {
+  font-family: $english-fonts;
+  font-size: rem(72);
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: 1px $main-color;
+
+  @include media(l) {
+    font-size: rem(128);
+  }
+}

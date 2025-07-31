@@ -1,0 +1,38 @@
+@use '../../foundation/variables' as *;
+@use '../../foundation/mixins' as *;
+@use '../../foundation/functions' as *;
+
+/* btn */
+.c-btn {
+  display: inline-block;
+  border-radius: 10px;
+  text-align: center;
+  height: rem(60);
+  line-height: rem(60); // テキストを垂直中央に置くため
+  cursor: pointer;
+  position: relative;
+
+  &--jump {
+    border: 1px solid #000;
+    width: rem(240);
+    font-weight: 700;
+
+    &::after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: rem(25);
+      right: rem(20);
+      width: rem(10);
+      height: rem(10);
+      background-color: $black;
+      border-radius: 50%;
+    }
+  }
+
+  &--contact {}
+
+  &--scroll {}
+
+  &--form {}
+}

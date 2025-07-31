@@ -1,0 +1,50 @@
+@use '../../foundation/variables' as *;
+@use '../../foundation/mixins' as *;
+@use '../../foundation/functions' as *;
+
+/* about */
+.p-about {
+  margin-top: rem(126);
+
+  @include media(l) {
+    margin-top: rem(71);
+
+  }
+
+  &__inner {
+    padding: 0 rem(20);
+
+    @include media(l) {
+      padding: 0;
+    }
+  }
+
+  &__title-wrapper {
+    margin-top: rem(15);
+
+    @include media(l) {
+      margin-top: rem(20);
+    }
+  }
+
+  &__description {
+    margin-top: rem(40);
+    width: rem(429);
+    font-size: rem(14);
+    font-weight: 400;
+    line-height: 1.8;
+
+    @include media(l) {
+      font-size: rem(16);
+    }
+  }
+
+  &__btn-wrapper {
+    margin-top: rem(32);
+    display: flex;
+
+    @include media(l) {
+      margin-top: rem(40);
+    }
+  }
+}
