@@ -6,7 +6,9 @@
 .l-main-container {
   display: grid;
   grid-template-columns: 1fr;
+
   @include media(l) {
-    grid-template-columns: to-percent(280, 1440) 1fr;
+    // grid-template-columns: to-percent(280, 1440) 1fr;
+    grid-template-columns: rem(280) 1fr;
   }
 }

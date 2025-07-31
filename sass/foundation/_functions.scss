@@ -7,12 +7,12 @@
 
 // clamp()ジェネレータ
 @function clamp-rem($min-vw, $min-size, $max-vw, $max-size, $base-font-size: 16) {
-  $slope: ($max-size - $min-size) / ($max-vw - $min-vw) * 100;
-  $intercept: $min-size - ($slope * $min-vw / 100);
+  $slope: math.div(($max-size - $min-size), ($max-vw - $min-vw)) * 100;
+  $intercept: $min-size - (math.div($slope * $min-vw, 100));
 
-  $min-rem: $min-size / $base-font-size * 1rem;
-  $max-rem: $max-size / $base-font-size * 1rem;
-  $intercept-rem: $intercept / $base-font-size * 1rem;
+  $min-rem: math.div($min-size, $base-font-size) * 1rem;
+  $max-rem: math.div($max-size, $base-font-size) * 1rem;
+  $intercept-rem: math.div($intercept, $base-font-size) * 1rem;
 
   @return clamp(#{$min-rem}, #{$intercept-rem} + #{$slope}vw, #{$max-rem});
 }

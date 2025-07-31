@@ -7,6 +7,10 @@
 .p-slider {
   margin-top: rem(73);
 
+  @include media(l) {
+    margin-top: rem(76);
+  }
+
   &__img-carousel {
     padding-top: rem(16);
     padding-bottom: rem(58);
@@ -16,6 +20,7 @@
 
     @include media(l) {
       padding: rem(63) 0;
+      width: calc(100vw - rem(280));
     }
   }
 
@@ -27,7 +32,6 @@
     @include media(l) {
       animation: scroll-left 50s linear infinite;
     }
-
   }
 
   &__img-item {
