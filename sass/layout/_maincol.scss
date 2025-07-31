@@ -1,0 +1,8 @@
+@use '../foundation/variables' as *;
+@use '../foundation/functions' as *;
+@use '../foundation/mixins' as *;
+
+/* maincol */
+.l-maincol {
+  order: 1;
+}

@@ -1,0 +1,69 @@
+@use '../../foundation/mixins' as *;
+@use '../../foundation/variables' as *;
+@use '../../foundation/functions' as *;
+
+/* hero */
+.p-hero {
+  margin-top: rem(33);
+  margin-left: to-percent(10, 375);
+  // background-color: $light-gray;
+  // border-top-left-radius: rem(10);
+  // border-bottom-left-radius: rem(10);
+
+  @include media(l) {
+    margin-top: rem(40);
+    margin-right: rem(40);
+    margin-left: 0;
+    border-radius: rem(50);
+  }
+
+  &__container {
+    position: relative;
+    // height: to-percent(589, 5766);
+    width: 100%;
+    aspect-ratio: 365 / 589;
+
+    @include media(l) {
+      // max-height: rem(873);
+      aspect-ratio: 1120 / 873;
+
+    }
+  }
+
+
+
+  &__catchcopy-wrapper {
+    position: absolute;
+    background-color: #fff;
+    border-radius: rem(10);
+    padding: rem(14) rem(13);
+    bottom: to-percent(129, 589);
+    left: to-percent(9, 365);
+
+    @include media(l) {
+      bottom: to-percent(148, 873);
+      left: to-percent(467, 1120);
+
+    }
+  }
+
+  &__catchcopy {
+    font-size: clamp-rem(375, 24, 1440, 64);
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  &__description {
+    position: absolute;
+    bottom: to-percent(61, 589);
+    left: to-percent(15, 589);
+    font-size: clamp-rem(375, 12, 1440, 16);
+    font-weight: 700;
+    line-height: 2;
+
+    @include media(l) {
+      bottom: to-percent(63, 873);
+      left: to-percent(467, 1120);
+    }
+  }
+}

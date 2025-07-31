@@ -1,0 +1,12 @@
+@use '../../foundation/variables' as *;
+@use '../../foundation/mixins' as *;
+@use '../../foundation/functions' as *;
+
+.c-contact-icon {
+  width: rem(20);
+  height: rem(15.7);
+  &--global-nav {
+    width: rem(24);
+    height: rem(18.8);
+  }
+}

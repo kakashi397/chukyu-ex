@@ -20,21 +20,21 @@
 </head>
 
 <body>
-  <header class="l-header u-only-sp">
+  <header class="l-header u-only-sp"><!-- ヘッダー -->
     <div class="l-header__wrapper">
-      <h1 class="c-logo c-logo--header">
+      <h1 class="c-logo c-logo--header"><!-- ロゴ -->
         <a href="#" class="c-logo__link">
           <img src="img/logo-pc.svg" alt="青牡丹工務店 | 大阪市北区の住宅建築・リフォーム・公共事業なら青牡丹工務店" class="c-logo__img" width="444"
             height="266">
         </a>
       </h1>
-      <button class="c-hamburger-btn js-hamburger-btn is-open" aria-label="メニューを開く">
+      <button class="c-hamburger-btn js-hamburger-btn is-open" aria-label="メニューを開く"><!-- ハンバーガーボタン -->
         <span class="c-hamburger-btn__line"></span>
         <span class="c-hamburger-btn__line"></span>
         <span class="c-hamburger-btn__line"></span>
       </button>
     </div>
-    <nav class="c-nav-sp js-nav-sp">
+    <nav class="c-nav-sp js-nav-sp"><!-- スマホメニュー -->
       <ul class="c-nav-sp__list">
         <li class="c-nav-sp__item">
           <a href="#" class="c-nav-sp__link">トップページ</a>
@@ -68,13 +68,101 @@
         </li>
         <li class="c-nav-sp__item">
           <a href="#faq" class="c-nav-sp__link"><img src="img/mail-icon.png" alt="お問い合わせ" width="40" height="40"
-              class="c-nav-sp__icon">お問い合わせ</a>
+              class="c-contact-icon">お問い合わせ</a>
         </li>
       </ul>
       <p class="c-nav-sp__copy">© AOBOTAN INC.</p>
     </nav>
   </header>
   <main>
+    <div class="l-main-container">
+      <div class="l-maincol"><!-- メインのカラム -->
+        <div class="l-maincol__container">
+          <section class="p-hero"><!-- ヒーロー -->
+            <div class="p-hero__container">
+              <img src="img/first-view-sp 1.png" width="730" height="1178" class="p-hero__img u-only-sp">
+              <img src="img/first-view-pc.png" width="2240" height="1746" class="p-hero__img u-only-pc">
+              <div class="p-hero__catchcopy-wrapper">
+                <p class="p-hero__catchcopy">理想を、カタチに</p>
+              </div>
+              <p class="p-hero__description">住宅購入は一生に一度あるかないかの、大きな買い物です。<br>青牡丹工務店は、最高の家造りを行うスペシャリスト集団です。</p>
+            </div>
+            <!-- ここにスクロールダウンのアニメーションを入れる -->
+          </section>
+
+          <section class="p-slider"><!-- スライダー -->
+            <div class="p-slider__img-carousel">
+              <ul class="p-slider__img-track js-img-track">
+                <li class="p-slider__img-item">
+                  <img src="img/slide01.jpg" alt="建設現場で作業する職人" class="p-slider__img" width="720" height="720">
+                </li>
+                <li class="p-slider__img-item">
+                  <img src="img/slide02.jpg" alt="お客様の要望を聞き、プランを提案する担当者" class="p-slider__img" width="720" height="720">
+                </li>
+                <li class="p-slider__img-item">
+                  <img src="img/slide03.jpg" alt="家づくりの現場を監修する経験豊富な担当者" class="p-slider__img" width="592" height="720">
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="p-catchcopy"><!-- キャッチコピー -->
+            
+          </section>
+        </div>
+      </div>
+      <aside class="l-sidebar u-only-pc"><!-- サイドバー -->
+        <div class="l-sidebar__container">
+          <div class="c-logo c-logo--sidebar"><!-- ロゴ（h1はヘッダーで使っているのでもう使えない） -->
+            <a href="#" class="c-logo__link">
+              <img src="img/logo-pc.svg" alt="青牡丹工務店 | 大阪市北区の住宅建築・リフォーム・公共事業なら青牡丹工務店" class="c-logo__img" width="444"
+                height="266">
+            </a>
+          </div>
+          <nav class="c-global-nav">
+            <ul class="c-global-nav__list">
+              <li class="c-global-nav__item">
+                <a href="" class="c-global-nav__link c-global-nav__link--first">私達について</a>
+                <!-- ここ開閉ボタン未実装 -->
+                <ul class="c-global-nav__sublist"><!-- リストの二重構造 -->
+                  <li class="c-global-nav__subitem">
+                    <a href="" class="c-global-nav__sublink">経営理念</a>
+                  </li>
+                  <li class="c-global-nav__subitem">
+                    <a href="" class="c-global-nav__sublink">会社概要</a>
+                  </li>
+                  <li class="c-global-nav__subitem">
+                    <a href="" class="c-global-nav__sublink">安全への取り組み</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="c-global-nav__item">
+                <a href="" class="c-global-nav__link">事業内容</a>
+                <!-- ここ開閉ボタン未実装 -->
+                <ul class="c-global-nav__sublist">
+                  <li class="c-global-nav__subitem">
+                    <a href="" class="c-global-nav__sublink">住宅建築・リフォーム</a>
+                  </li>
+                  <li class="c-global-nav__subitem">
+                    <a href="" class="c-global-nav__sublink">法人新築・リフォーム</a>
+                  </li>
+                  <li class="c-global-nav__subitem">
+                    <a href="" class="c-global-nav__sublink">公共工事</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="c-global-nav__item">
+                <a href="" class="c-global-nav__link">お知らせ</a>
+              </li>
+              <li class="c-global-nav__item">
+                <a href="" class="c-global-nav__link"><img src="img/mail-icon.png" alt="お問い合わせ" width="40" height="40"
+                    class="c-contact-icon c-contact-icon--global-nav">お問い合わせ</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </aside>
+    </div>
   </main>
 </body>
 

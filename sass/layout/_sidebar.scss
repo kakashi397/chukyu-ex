@@ -1,0 +1,15 @@
+@use '../foundation/variables' as *;
+@use '../foundation/functions' as *;
+@use '../foundation/mixins' as *;
+
+/* sidebar */
+.l-sidebar {
+  order: 0;
+  display: flex;
+  justify-content: center;
+  padding-top: rem(74);
+
+  &__container {
+    width: to-percent(200, 280);
+  }
+}
