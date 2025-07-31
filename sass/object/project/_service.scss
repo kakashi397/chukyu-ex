@@ -1,0 +1,22 @@
+@use '../../foundation/variables' as *;
+@use '../../foundation/mixins' as *;
+@use '../../foundation/functions' as *;
+
+/* service */
+.p-service {
+  margin-top: rem(52);
+  padding-top: rem(26);
+  position: relative;
+  &__img {
+    width: rem(69);
+    position: absolute;
+    top: -48px;
+    right: to-percent(20, 375);
+  }
+  &__title-wrapper {
+    margin-top: rem(15);
+  }
+  &__cards {
+    margin-top: rem(24);
+  }
+}
