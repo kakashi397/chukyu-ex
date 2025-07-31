@@ -1,0 +1,58 @@
+@use '../../foundation/variables' as *;
+@use '../../foundation/mixins' as *;
+@use '../../foundation/functions' as *;
+
+/* catchcopy */
+.p-catchcopy {
+  position: relative;
+
+  &__box {
+    background-color: $light-gray;
+    padding-top: rem(22);
+    padding-right: rem(24);
+    padding-bottom: rem(10);
+    padding-left: rem(24);
+    display: flex;
+    flex-direction: row-reverse;
+    gap: rem(16.5);
+    position: absolute;
+    top: rem(-159);
+    right: rem(27);
+
+    @include media(l) {
+      padding-top: rem(26);
+      padding-right: rem(37);
+      padding-bottom: rem(6);
+      padding-left: rem(37);
+      gap: rem(16);
+      top: rem(-232);
+      right: rem(182);
+    }
+  }
+
+  &__text {
+    font-size: rem(24);
+    font-weight: 700;
+    line-height: 1;
+    writing-mode: vertical-lr;
+    letter-spacing: rem(12);
+
+    @include media(l) {
+      font-size: rem(40);
+      letter-spacing: rem(20);
+    }
+  }
+
+  &__img {
+    width: rem(60);
+    position: absolute;
+    top: rem(-17);
+    right: rem(148);
+
+    @include media(l) {
+      width: rem(161);
+      top: rem(-35);
+      right: rem(374);
+    }
+  }
+}
