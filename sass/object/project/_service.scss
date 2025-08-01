@@ -7,16 +7,60 @@
   margin-top: rem(52);
   padding-top: rem(26);
   position: relative;
+
   &__img {
     width: rem(69);
     position: absolute;
     top: -48px;
     right: to-percent(20, 375);
   }
+
   &__title-wrapper {
     margin-top: rem(15);
   }
+
   &__cards {
     margin-top: rem(24);
+    display: grid;
+    flex-direction: column;
+    gap: rem(51);
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: rem(24);
+    max-width: rem(500);
+    margin: 0 auto;
+    
+    &-heading-wrapper {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+    
+    &-number {
+      font-family: $english-fonts;
+      font-size: rem(48); 
+      font-weight: 700;
+      color: $sub-color;
+    }
+    
+    &-heading {
+      padding: rem(10) rem(16);
+      background-color: $white;
+      font-size: rem(24);
+      font-weight: 700;
+    }
+    
+    &-description {
+      margin-top: rem(12);
+      font-weight: 400;
+      line-height: 1.8;
+    }
+
+    &-btn-wrapper {
+      margin-top: rem(28);
+    }
   }
 }

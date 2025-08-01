@@ -6,6 +6,10 @@
 .l-container {
   padding: 0 rem(20);
 
+  @include media(m) {
+    // padding: 0 rem(50);
+  }
+
   @include media(l) {
     padding: 0;
   }
