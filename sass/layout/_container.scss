@@ -5,12 +5,12 @@
 /* container */
 .l-container {
   padding: 0 rem(20);
-
-  @include media(m) {
-    // padding: 0 rem(50);
-  }
+  max-width: rem(500);
+  margin: 0 auto;
 
   @include media(l) {
     padding: 0;
+    max-width: none;
+    margin: 0;
   }
 }

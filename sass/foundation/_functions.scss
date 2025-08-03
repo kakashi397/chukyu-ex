@@ -19,16 +19,17 @@
 
 // %変換ジェネレータ
 @function to-percent($value, $base) {
-  // @if math.unitless($value) {
-  //   $value: $value * 1px;
-  // }
-  // @if math.unitless($base) {
-  //   $base: $base * 1px;
-  // }
   @return math.div($value, $base) * 100%;
+}
+
+// vw変換ジェネレータ
+@function to-vw($value, $base) {
+  @return math.div($value, $base) * 100vw;
 }
 
 // スケール関数
 @function scale($base, $value, $target) {
-  @return ($value / $base) * $target;
+  @return math.div($value, $base) * $target;
 }
+
+
