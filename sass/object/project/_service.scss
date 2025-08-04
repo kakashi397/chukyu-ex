@@ -103,6 +103,7 @@
       @include media(l) {
         font-size: rem(168);
         margin-left: rem(-77);
+        z-index: -10;
       }
     }
 
