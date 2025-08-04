@@ -5,6 +5,7 @@
 @use './layout/main';
 @use './layout/maincol';
 @use './layout/sidebar';
+@use './layout/container';
 
 // component
 @use './object/component/hamburger-btn';
@@ -22,6 +23,7 @@
 @use './object/project/slider';
 @use './object/project/catchcopy';
 @use './object/project/about';
+@use './object/project/service';
 
 // utility
 @use './object/utility/utility';
