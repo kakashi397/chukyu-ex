@@ -1,0 +1,54 @@
+@use '../../foundation/variables' as *;
+@use '../../foundation/mixins' as *;
+@use '../../foundation/functions' as *;
+
+.p-news {
+  margin-top: rem(85);
+
+  &__title-wrapper {
+    margin-top: rem(15);
+  }
+
+  &__lists {
+    margin-top: rem(48);
+  }
+
+  &__article {
+    padding-top: rem(16);
+    padding-bottom: rem(15);
+    border-top: 1px solid $sub-color;
+
+  }
+
+  &__meta {
+    display: flex;
+    align-items: center;
+    gap: rem(16);
+  }
+
+  &__category {
+    display: inline-block;
+    border: 1px solid $main-color;
+    padding-top: rem(4.5);
+    padding-bottom: rem(4.5);
+    width: rem(116);
+    text-align: center;
+    color: $main-color;
+    font-size: rem(14);
+    font-weight: 700;
+  }
+
+  &__date {
+    color: $main-color;
+    font-size: rem(14);
+    font-weight: 700;
+  }
+
+  &__title {
+    margin-top: rem(16);
+    font-size: rem(14);
+    font-weight: 700;
+    width: to-percent(298, 335);
+    line-height: 1;
+  }
+}

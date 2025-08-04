@@ -6,11 +6,13 @@
 .p-service {
   margin-top: rem(52);
   padding-top: rem(26);
+  padding-bottom: rem(91);
   position: relative;
 
   @include media(l) {
     margin-top: rem(85);
     padding-top: rem(49);
+    padding-bottom: rem(100);
   }
 
   &__img {
