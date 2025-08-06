@@ -5,12 +5,24 @@
 .p-news {
   margin-top: rem(85);
 
+  @include media(l) {
+    margin-top: rem(107);
+  }
+
   &__title-wrapper {
     margin-top: rem(15);
+
+    @include media(l) {
+      margin-top: rem(21);
+    }
   }
 
   &__lists {
     margin-top: rem(48);
+
+    @include media(l) {
+      width: to-vw(1120, 1440);
+    }
   }
 
   &__article {
@@ -18,6 +30,10 @@
     padding-bottom: rem(15);
     border-top: 1px solid $sub-color;
 
+    @include media(l) {
+      padding-top: rem(32);
+      padding-bottom: rem(31);
+    }
   }
 
   &__meta {
@@ -50,5 +66,14 @@
     font-weight: 700;
     width: to-percent(298, 335);
     line-height: 1;
+
+    &.is-multiline {
+      line-height: 1.8;
+    }
+
+    @include media(l) {
+      margin-top: rem(24);
+      font-size: rem(16);
+    }
   }
 }
