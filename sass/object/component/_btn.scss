@@ -30,7 +30,11 @@
     }
   }
 
-  &--contact {}
+  &--contact {
+    background-color: $white;
+    width: rem(284);
+    font-weight: 700;
+  }
 
   &--scroll {}
 

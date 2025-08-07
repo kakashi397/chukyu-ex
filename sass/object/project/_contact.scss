@@ -1,0 +1,68 @@
+@use '../../foundation/variables' as *;
+@use '../../foundation/mixins' as *;
+@use '../../foundation/functions' as *;
+
+.p-contact {
+  background-color: $background;
+  position: relative;
+  margin-top: rem(64);
+  padding-top: rem(27);
+  padding-bottom: rem(41);
+
+  &__img {
+    position: absolute;
+    width: clamp-rem(375, 59, 1440, 175);
+    top: -28px;
+    right: to-percent(20, 375);
+  }
+
+  &__title-wrapper {
+    margin-top: rem(16);
+  }
+
+  &__content {
+    margin-top: rem(47);
+  }
+
+  &__title-wrapper {
+    display: flex;
+    gap: rem(17);
+    align-items: flex-end;
+  }
+
+  &__title {
+    font-family: $english-fonts;
+    font-size: rem(32);
+    font-weight: 400;
+  }
+
+  &__title-sub {
+    font-size: rem(12);
+    font-weight: 700;
+    margin-bottom: rem(6);
+  }
+
+  &__info-wrapper {
+    margin-top: rem(24);
+    border-top: 1px solid #000;
+    padding-top: rem(24);
+    display: flex;
+    flex-direction: column;
+    gap: rem(7);
+  }
+
+  &__tel-number {
+    font-family: $english-fonts;
+    font-size: rem(32);
+    font-weight: 400;
+  }
+
+  &__open-hour {
+    font-size: rem(12);
+    font-weight: 700;
+  }
+
+  &__btn-wrapper {
+    margin-top: rem(36);
+  }
+}

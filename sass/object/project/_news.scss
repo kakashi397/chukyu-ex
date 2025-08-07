@@ -23,6 +23,10 @@
     @include media(l) {
       width: to-vw(1120, 1440);
     }
+
+    &:last-child {
+      border-bottom: 1px solid $sub-color;
+    }
   }
 
   &__article {
