@@ -1,0 +1,118 @@
+@use '../../foundation/variables' as *;
+@use '../../foundation/mixins' as *;
+@use '../../foundation/functions' as *;
+
+.p-contact {
+  background-color: $background;
+  position: relative;
+  margin-top: rem(64);
+  padding-top: rem(27);
+  padding-bottom: rem(41);
+
+  @include media(l) {
+    margin-top: rem(132);
+    border-top-left-radius: rem(50);
+    border-bottom-left-radius: rem(50);
+    padding-top: rem(31);
+    padding-left: rem(24);
+    padding-bottom: rem(53);
+  }
+
+  &__img {
+    position: absolute;
+    width: clamp-rem(375, 59, 1440, 175);
+    top: -28px;
+    right: to-percent(20, 375);
+
+    @include media(l) {
+      top: 31px;
+      right: to-vw(40, 1440);
+    }
+
+  }
+
+  &__title-wrapper {
+    margin-top: rem(16);
+
+    @include media(l) {
+      margin-top: rem(21);
+    }
+  }
+
+  &__content {
+    margin-top: rem(47);
+
+    @include media(l) {
+      display: flex;
+      margin-top: rem(39);
+    }
+  }
+
+  &__head-wrapper {
+    display: flex;
+    gap: rem(17);
+    align-items: flex-end;
+
+    @include media(l) {
+      flex-direction: column;
+      gap: rem(8);
+      align-items: normal;
+      padding-top: rem(8);
+      padding-right: rem(32);
+      padding-bottom: rem(8);
+    }
+  }
+
+  &__head {
+    font-family: $english-fonts;
+    font-size: rem(32);
+    font-weight: 400;
+  }
+
+  &__head-sub {
+    font-size: rem(12);
+    font-weight: 700;
+    margin-bottom: rem(6);
+
+    @include media(l) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__info-wrapper {
+    margin-top: rem(24);
+    border-top: 1px solid #000;
+    padding-top: rem(24);
+    display: flex;
+    flex-direction: column;
+    gap: rem(7);
+
+    @include media(l) {
+      margin-top: 0;
+      border-top: none;
+      border-right: 1px solid #000;
+      border-left: 1px solid #000;
+      padding: rem(8) rem(32);
+    }
+  }
+
+  &__tel-number {
+    font-family: $english-fonts;
+    font-size: rem(32);
+    font-weight: 400;
+  }
+
+  &__open-hour {
+    font-size: rem(12);
+    font-weight: 700;
+  }
+
+  &__btn-wrapper {
+    margin-top: rem(36);
+
+    @include media(l) {
+      margin-top: rem(6);
+      margin-left: rem(64);
+    }
+  }
+}
