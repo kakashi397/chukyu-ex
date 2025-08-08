@@ -11,7 +11,9 @@
     height: rem(18.8);
   }
 
-  &__contact {
-    
+  &--contact {
+    vertical-align: middle;
+    margin-right: rem(8);
+    margin-bottom: rem(5);
   }
 }

@@ -34,6 +34,18 @@
     background-color: $white;
     width: rem(284);
     font-weight: 700;
+
+    &::after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: rem(25);
+      right: rem(20);
+      width: rem(10);
+      height: rem(10);
+      background-color: $black;
+      border-radius: 50%;
+    }
   }
 
   &--scroll {}
