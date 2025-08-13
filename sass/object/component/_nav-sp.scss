@@ -21,6 +21,10 @@
     flex-direction: column;
     gap: rem(24.7);
     padding-top: rem(36);
+
+    &--footer {
+      gap: rem(32);
+    }
   }
 
   &__item:last-child {
@@ -37,6 +41,11 @@
   &__copy {
     margin-top: rem(19);
     font-size: rem(12);
+
+    &--footer {
+      margin-top: rem(58);
+      text-align: center;
+    }
   }
 
   @include media(l) {
