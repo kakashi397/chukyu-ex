@@ -2,8 +2,13 @@
 
 /* logo */
 .c-logo {
+
   &--header {
     width: rem(98);
     margin-top: rem(10);
+  }
+
+  &--footer {
+    width: rem(222);
   }
 }
