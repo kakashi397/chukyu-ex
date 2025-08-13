@@ -5,12 +5,15 @@
 
 /* nav-sp */
 .c-nav-sp {
-  width: 100vw;
-  height: 100dvh;
-  position: fixed;
-  text-align: center;
-  translate: 100vw;
-  transition: all 0.6s;
+  
+  &.c-nav-sp--header {
+    width: 100vw;
+    height: 100dvh;
+    position: fixed;
+    translate: 100vw;
+    text-align: center;
+    transition: all 0.6s;
+  }
 
   &__list {
     font-weight: 700;
