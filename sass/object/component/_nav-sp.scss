@@ -5,7 +5,7 @@
 
 /* nav-sp */
 .c-nav-sp {
-  
+
   &.c-nav-sp--header {
     width: 100vw;
     height: 100dvh;
@@ -24,6 +24,10 @@
 
     &--footer {
       gap: rem(32);
+
+      @include media(l) {
+        flex-direction: row;
+      }
     }
   }
 
@@ -49,7 +53,9 @@
   }
 
   @include media(l) {
-    display: none; // PCでは非表示
+    &.c-nav-sp--header {
+      display: none; // PCでは非表示
+    }
   }
 
   &.is-open {
